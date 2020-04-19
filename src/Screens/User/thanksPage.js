@@ -21,7 +21,7 @@ export default class Thanks extends React.Component{
                         <CardItem>
                             <Body>
                                 <Text>
-                                   Thank You an SMS has been sent to your phone confirming your booking
+                                   Thank You an SMS has been sent to your p  hone confirming your booking
                                 </Text>
                             </Body>
                         </CardItem>
