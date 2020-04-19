@@ -4,11 +4,13 @@ import {createStackNavigator} from 'react-navigation-stack';
 import {createAppContainer, createSwitchNavigator} from 'react-navigation';
 import Home from './src/Screens/User/Home';
 import OrderPage from './src/Screens/User/orderform';
+import Thanks from './src/Screens/User/thanksPage';
 import Icon from 'react-native-vector-icons/FontAwesome'
 import {View} from 'react-native'
 const AppStack = createStackNavigator({
-  Home: {screen: Home},
-    Order:{screen:OrderPage}
+    Home: {screen: Home},
+    Order:{screen:OrderPage},
+    Thanks:{screen:Thanks}
 },{
     initialRouteName: 'Home',
     headerMode:'float',

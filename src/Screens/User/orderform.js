@@ -9,17 +9,17 @@ export default class OrderPage extends React.Component{
         this.state = {
             firstName:"",
             lastName:"",
-            email:"",
+            phoneNumber:"",
             loading: false
         };
     }
     saveUserData  = async ()=> {
-        this.setState({loading: true})
         const data = {
             firstName: this.state.firstName,
             lastName: this.state.lastName,
-            email: this.state.email
+            phoneNumber: this.state.phoneNumber
         };
+        this.props.navigation.navigate('Thanks')
     };
 render(){
     return(
@@ -52,8 +52,8 @@ render(){
                 />
                 <Input
                     placeholder='enter email address'
-                    value={this.email}
-                    onChangeText={value => this.setState({email:value})}
+                    value={this.phoneNumber}
+                    onChangeText={value => this.setState({phoneNumber:value})}
                     leftIcon={
                         <Icon
                             name='at'
