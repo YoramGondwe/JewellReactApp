@@ -2,6 +2,7 @@ import React from 'react';
 import {Image} from 'react-native';
 import {
   Container,
+
   Header,
   Content,
   Card,

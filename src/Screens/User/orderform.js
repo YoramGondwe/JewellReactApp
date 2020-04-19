@@ -3,6 +3,7 @@ import {Container, Content} from 'native-base';
 import {CheckBox, Input} from 'react-native-elements';
 import Icon from '../../Components/Icon';
 import PrimaryButton from '../../Components/PrimaryButton';
+import axios from 'axios';
 export default class OrderPage extends React.Component{
     constructor(props:State) {
         super(props);
@@ -19,6 +20,7 @@ export default class OrderPage extends React.Component{
             lastName: this.state.lastName,
             phoneNumber: this.state.phoneNumber
         };
+        axios.post(`http://192.168.0.101:3000/`,{data}).then(res =>{console.log(res)}).catch(error => console.log(error));
         this.props.navigation.navigate('Thanks')
     };
 render(){
