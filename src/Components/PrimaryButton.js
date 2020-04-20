@@ -4,26 +4,25 @@ import {StyleSheet} from "react-native";
 
 export default function PrimaryButton(props: any) {
     return <Button
-        buttonStyle={styles.button}
+        buttonStyle={[styles.button, styles[props.color ? props.color : 'primary']]}
         titleStyle={styles.buttonText}
-        containerStyle={styles.buttonContainer}
         {...props} />
 }
 
 const styles = StyleSheet.create({
-    buttonContainer: {
-        alignItems: 'center',
-        justifyContent: 'center',
-        marginTop: 30,
-    },
     button: {
-        backgroundColor: '#00CCBC',
         borderRadius: 10,
-        paddingHorizontal: 20,
-        paddingVertical: 15
+        paddingHorizontal: 40,
+        paddingVertical: 15,
+    },
+    primary: {
+        backgroundColor: '#0c2430',
+    },
+    danger: {
+        backgroundColor: '#FE180C',
     },
     buttonText: {
         fontSize: 17,
         textTransform: 'uppercase'
-    }
+    },
 });

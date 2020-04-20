@@ -53,7 +53,7 @@ render(){
                     }
                 />
                 <Input
-                    placeholder='enter Phone Number'
+                    placeholder='Your Phone Number'
                     value={this.phoneNumber}
                     onChangeText={value => this.setState({phoneNumber:value})}
                     leftIcon={

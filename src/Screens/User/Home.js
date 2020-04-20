@@ -16,6 +16,7 @@ import {
 } from 'native-base';
 import * as data from '../../data/products'
 import {ScrollView} from "react-native-gesture-handler";
+import PrimaryButton from '../../Components/PrimaryButton';
 export default class Home extends React.Component {
   render() {
     return (
@@ -30,7 +31,7 @@ export default class Home extends React.Component {
                           <Thumbnail source={{uri: 'https://document-export.canva.com/DAD5zZGdY4o/1/thumbnail/0001-6089229792.png'}} />
                           <Body>
                             <Text>{item.name}</Text>
-                            <Text note>{item.date}</Text>
+                            <Text note>{item.data}</Text>
                           </Body>
                         </Left>
                       </CardItem>
@@ -44,11 +45,9 @@ export default class Home extends React.Component {
                       </CardItem>
                       <CardItem>
                         <Left>
-                          <Button  textStyle={{color: '#368b3e'}}
-                          onPress={()=>this.props.navigation.navigate('Order')}
-                          >
-                            <Text>Book and Appointment</Text>
-                          </Button>
+                          <PrimaryButton
+                              title={'Book an Appointment'}
+                              onPress={()=>this.props.navigation.navigate('Order')  } />
                         </Left>
                       </CardItem>
                     </Card>

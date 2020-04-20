@@ -3,23 +3,30 @@
     {
       "uri": "https://image.shutterstock.com/image-photo/indian-fully-handcrafted-gold-plated-600w-1474774703.jpg",
       "name": "The Jewell",
-      "description": "Description brief Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet",
-      "data": "April 15, 2016",
+      "description": "These are spider store designs from Charlotte web. To get Your own custom design ",
+      "data": "April 15, 2019",
       "id": 1
     },
     {
       "uri": "https://image.shutterstock.com/image-photo/wealth-pixiu-bracelet-closeup-gold-600w-1381640348.jpg",
       "name": "The Jewell",
-      "description": "Description brief Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet",
-      "data": "April 15, 2016",
+      "description": "These are spider store designs from Charlotte web. To get Your own custom design",
+      "data": "April 15, 2019",
       "id": 2
     }
   ,{
       "uri": "https://cdn.pixabay.com/photo/2016/07/16/11/50/heart-1521377_960_720.jpg",
       "name": "The Jewell",
-      "description": "Description brief Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet",
-      "data": "April 15, 2016",
+      "description": "These are spider store designs from Charlotte web. To get Your own custom design",
+      "data": "April 15, 2019",
       "id": 3
+    },
+    {
+      "uri": "https://cdn.pixabay.com/photo/2016/07/16/11/50/heart-1521377_960_720.jpg",
+      "name": "The Jewell",
+      "description": "These are spider store designs from Charlotte web. To get Your own custom design",
+      "data": "April 15, 2019",
+      "id": 4
     }
   ]
 }
