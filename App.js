@@ -15,9 +15,9 @@ const AppStack = createStackNavigator({
     initialRouteName: 'Home',
     headerMode:'float',
     defaultNavigationOptions: ({navigation}:any) => ({
-        title: 'The Jewell',
+        title: 'The Jewell Store',
         headerStyle: {
-            backgroundColor: '#00CCBC',
+            backgroundColor: '#0c2430',
             elevation: 0
         },
         gestureEnabled: true,
@@ -27,9 +27,9 @@ const AppStack = createStackNavigator({
             alignContent:'center',
             alignItems:'center',
         },
-        headerLeft:() =>
-            <View style={{marginLeft: 10}}><Icon name="bars" size={20} color="#fff" onPress={() => navigation.toggleDrawer()} /></View>,
-        headerRight: () => <View style={{marginRight: 10}}><Icon name="power-off" size={20} color="#fff" /></View>
+        // headerLeft:() =>
+        //     <View style={{marginLeft: 10}}><Icon name="bars" size={20} color="#fff" onPress={() => navigation.toggleDrawer()} /></View>,
+        // headerRight: () => <View style={{marginRight: 10}}><Icon name="power-off" size={20} color="#fff" /></View>
     }),
 
 });
