@@ -1,17 +1,6 @@
 import React from 'react';
-import {
-    Container,
-    Header,
-    Content,
-    Card,
-    CardItem,
-    Thumbnail,
-    Text,
-    Button,
-    Icon,
-    Left,
-    Body,Right
-} from 'native-base';
+import {Container,Content,Card,CardItem, Text,Body} from 'native-base';
+import PrimaryButton from '../../Components/PrimaryButton';
 export default class Thanks extends React.Component{
     render(){
         return(
@@ -23,6 +12,10 @@ export default class Thanks extends React.Component{
                                 <Text>
                                    Thank You an SMS has been sent to your p  hone confirming your booking
                                 </Text>
+                                <PrimaryButton
+                                    loading={this.state.loading}
+                                    title={'Go To Home'}
+                                    onPress={()=>this.props.navigation.navigate('Home') } />
                             </Body>
                         </CardItem>
                     </Card>
